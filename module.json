@@ -13,6 +13,7 @@
             "url": "https://github.com/joaorequiao/cairnSemSol"
         }
     ],
+    "manifest": "https://github.com/joaorequiao/cairnSemSol/blob/main/module.json",
     "esmodules": [
         "module/cairn.js"
     ],
