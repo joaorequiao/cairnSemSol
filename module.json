@@ -1,0 +1,35 @@
+{
+    "id": "cairn-Sem-Sol",
+    "title": "Cairn Sem Sol",
+    "description": "Modulo de Cairn - Fuga da Terra Sem Sol",
+    "version": "0.10.00",
+    "compatibility": {
+        "minimum": "10",
+        "verified": "10"
+    },    
+    "authors": [
+        {
+            "name": "joaorequiao",
+            "url": "https://github.com/joaorequiao/cairnSemSol"
+        }
+    ],
+    "esmodules": [
+        "module/cairn.js"
+    ],
+    "styles": [
+        "css/cairn.css"
+    ],
+    "scripts": [
+        "module/actor/actor.js",
+        "module/actor/actor-sheet.js"
+    ],
+    "templates":[
+        "templates/actor/character-sheet.html"
+    ],
+    "relationships": {
+        "systems": [{
+            "id":"cairn",
+            "type": "system"
+        }]
+      }
+}

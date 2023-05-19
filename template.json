@@ -1,0 +1,87 @@
+{
+  "Actor": {
+    "types": ["character", "npc", "container"],
+    "templates": {
+      "actorBase": {
+        "hp": {
+          "value": 6,
+          "max": 6
+        },
+        "abilities": {
+          "STR": {
+            "value": 10,
+            "max": 10
+          },
+          "DEX": {
+            "value": 10,
+            "max": 10
+          },
+          "WIL": {
+            "value": 10,
+            "max": 10
+          },
+          "CHA": {
+            "value": 10,
+            "max": 10
+          }
+        }
+      }
+    },
+    "character": {
+      "templates": ["base", "actorBase"],
+      "background": "",
+      "biography": "",
+      "deprived": false,
+      "gold": 0
+    },
+
+    "npc": {
+      "templates": ["base", "actorBase"],
+      "description": "",
+      "armor": 0
+    },
+
+    "container": {
+      "templates": ["base"],
+      "description": "",
+      "slots": 0
+    }
+  },
+  "Item": {
+    "types": ["item", "weapon", "armor", "spellbook"],
+    "templates": {
+      "universal": {
+        "description": "",
+        "weightless": false,
+        "equipped": false,
+        "bulky": false
+        
+      },
+      "withDamage" : {
+        "damageFormula": "",
+        "criticalDamage": "",
+        "blast": false
+      },
+      "consumable" : {
+        "uses": {
+          "value": 0,
+          "max": 0          
+        }
+      }
+    },
+    "item": {
+      "templates": ["base", "universal","withDamage", "consumable"],
+      "quantity": 0
+    },
+    "weapon": {
+      "templates": ["base", "universal","withDamage", "consumable"]
+    },
+    "armor": {
+      "templates": ["base", "universal", "consumable"],
+      "armor": 1
+    },
+    "spellbook": {
+      "templates": ["base", "universal"]
+    }
+  }
+}
